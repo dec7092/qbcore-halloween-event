@@ -26,7 +26,11 @@
 	
 	
 --- added into smallresources/extra client/main.lua
-```
+
+
+```sh
+
+
 RegisterNetEvent("consumables:client:EatCandy")
 AddEventHandler("consumables:client:EatCandy", function(itemName)
     TriggerEvent('animations:client:EmoteCommandStart', {"fallover3"})
@@ -41,13 +45,13 @@ AddEventHandler("consumables:client:EatCandy", function(itemName)
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
         TriggerServerEvent("DHCore:Server:SetMetaData", "hunger", DHCore.Functions.GetPlayerData().metadata["hunger"] + Consumeables[itemName])
     end)
-end)```
-
----
-
+end)
+```
 
 
-requires:
+
+
+    requires:
 MHacking: https://github.com/GHMatti/FiveM-Scripts
 Jigsaw: https://github.com/avilchiis/jigsaw-minigame
 
