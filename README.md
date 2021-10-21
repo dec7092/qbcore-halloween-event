@@ -26,7 +26,7 @@
 	
 	
 --- added into smallresources/extra client/main.lua
-
+---
 RegisterNetEvent("consumables:client:EatCandy")
 AddEventHandler("consumables:client:EatCandy", function(itemName)
     TriggerEvent('animations:client:EmoteCommandStart', {"fallover3"})
@@ -43,7 +43,7 @@ AddEventHandler("consumables:client:EatCandy", function(itemName)
     end)
 end)
 
-
+---
 
 
 
