@@ -47,8 +47,7 @@ end)
 
 
 
-requires this and mHacking
-https://forum.cfx.re/t/jigsaw-minigame-standalone/1600266
+requires:
 MHacking: https://github.com/GHMatti/FiveM-Scripts
 Jigsaw: https://github.com/avilchiis/jigsaw-minigame
 
