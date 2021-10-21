@@ -42,3 +42,15 @@ AddEventHandler("consumables:client:EatCandy", function(itemName)
         TriggerServerEvent("DHCore:Server:SetMetaData", "hunger", DHCore.Functions.GetPlayerData().metadata["hunger"] + Consumeables[itemName])
     end)
 end)
+
+
+
+
+
+requires this and mHacking
+https://forum.cfx.re/t/jigsaw-minigame-standalone/1600266
+MHacking: https://github.com/GHMatti/FiveM-Scripts
+Jigsaw: https://github.com/avilchiis/jigsaw-minigame
+
+
+
