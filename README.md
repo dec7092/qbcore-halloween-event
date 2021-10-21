@@ -41,7 +41,7 @@ AddEventHandler("consumables:client:EatCandy", function(itemName)
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
         TriggerServerEvent("DHCore:Server:SetMetaData", "hunger", DHCore.Functions.GetPlayerData().metadata["hunger"] + Consumeables[itemName])
     end)
-end),
+end)---
 
 ---
 
