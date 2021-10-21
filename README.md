@@ -34,16 +34,16 @@
 RegisterNetEvent("consumables:client:EatCandy")
 AddEventHandler("consumables:client:EatCandy", function(itemName)
     TriggerEvent('animations:client:EmoteCommandStart', {"fallover3"})
-    DHCore.Functions.Progressbar("eat_something", "Eating..", 1500, false, true, {
+    QBCore.Functions.Progressbar("eat_something", "Eating..", 1500, false, true, {
         disableMovement = false,
         disableCarMovement = false,
 		disableMouse = false,
 		disableCombat = true,
     }, {}, {}, {}, function() -- Done
-        TriggerEvent("inventory:client:ItemBox", DHCore.Shared.Items[itemName], "remove")
-		TriggerServerEvent("DHCore:Server:RemoveItem", itemName, 1)
+        TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items[itemName], "remove")
+		TriggerServerEvent("QBCore:Server:RemoveItem", itemName, 1)
         TriggerEvent('animations:client:EmoteCommandStart', {"c"})
-        TriggerServerEvent("DHCore:Server:SetMetaData", "hunger", DHCore.Functions.GetPlayerData().metadata["hunger"] + Consumeables[itemName])
+        TriggerServerEvent("QBCore:Server:SetMetaData", "hunger", QBCore.Functions.GetPlayerData().metadata["hunger"] + Consumeables[itemName])
     end)
 end)
 ```
