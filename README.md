@@ -51,8 +51,10 @@ end)
 
 
 
-requires MHacking:    https://github.com/GHMatti/FiveM-Scripts
-Jigsaw:    https://github.com/avilchiis/jigsaw-minigame
+requires MHacking:
+    https://github.com/GHMatti/FiveM-Scripts
+Jigsaw:
+    https://github.com/avilchiis/jigsaw-minigame
 
 
 
